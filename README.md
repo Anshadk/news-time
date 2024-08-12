@@ -6,6 +6,8 @@ Real-time news updates from various sources
 Category & country based filtering for targeted news
 Responsive design for optimal viewing on all devices
 
+API used:https://newsapi.org/
+
 Technologies Used:
 React.js
 Axios for API requests
