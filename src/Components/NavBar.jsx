@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function NavBar({ onCategoryChange, onCountryChange }) {
   const handleCategoryClick = (category) => {
@@ -32,7 +32,7 @@ function NavBar({ onCategoryChange, onCountryChange }) {
               <a
                 className="nav-link"
                 href="#business"
-                onClick={() => handleCategoryClick('business')}
+                onClick={() => handleCategoryClick("business")}
               >
                 Business
               </a>
@@ -41,7 +41,7 @@ function NavBar({ onCategoryChange, onCountryChange }) {
               <a
                 className="nav-link"
                 href="#entertainment"
-                onClick={() => handleCategoryClick('entertainment')}
+                onClick={() => handleCategoryClick("entertainment")}
               >
                 Entertainment
               </a>
@@ -50,20 +50,21 @@ function NavBar({ onCategoryChange, onCountryChange }) {
               <a
                 className="nav-link"
                 href="#sports"
-                onClick={() => handleCategoryClick('sports')}
+                onClick={() => handleCategoryClick("sports")}
               >
                 Sports
               </a>
             </li>
-            <li className="nav-item">
+            
+          </ul>
+        </div>
+        <li className="nav-item d-flex ms-auto">
               <select className="form-select" onChange={handleCountryChange}>
                 <option value="in">India</option>
                 <option value="us">US</option>
-                <option value="gb">UK</option> 
+                <option value="gb">UK</option>
               </select>
             </li>
-          </ul>
-        </div>
       </div>
     </nav>
   );
