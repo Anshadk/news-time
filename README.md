@@ -12,3 +12,6 @@ Technologies Used:
 React.js
 Axios for API requests
 bootstrap Components for styling
+
+## To run the project in locally
+   npm run dev
