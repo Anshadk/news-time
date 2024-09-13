@@ -6,7 +6,7 @@ import { APIKEY, BASE_URL } from "./Constants/Constant";
 
 function App() {
   const [news, setNews] = useState([]);
-  const [country, setCountry] = useState('in');
+  const [country, setCountry] = useState('us');
   const [category, setCategory] = useState('general'); 
 
   const handleNavClick = (selectedCategory) => {
@@ -26,11 +26,11 @@ function App() {
       try {
         const response = await axios.get(URL);
         setNews(response.data.articles);
+        console.log(response);
       } catch (error) {
         console.error(error);
       }
     };
-  
     fetchData();
   }, [country, category]);
   

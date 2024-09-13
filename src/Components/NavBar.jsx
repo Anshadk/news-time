@@ -60,8 +60,8 @@ function NavBar({ onCategoryChange, onCountryChange }) {
         </div>
         <li className="nav-item d-flex ms-auto">
               <select className="form-select" onChange={handleCountryChange}>
-                <option value="in">India</option>
                 <option value="us">US</option>
+                <option value="in">India</option>
                 <option value="gb">UK</option>
               </select>
             </li>
