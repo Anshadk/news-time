@@ -11,9 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
-*.firebase
+.firebase
 firebase.json
 .firebaserc
+**/Constant.jsx
+/src/Constants
 
 
 # Editor directories and files
